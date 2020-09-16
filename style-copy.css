@@ -39,7 +39,7 @@ nav ul {
 
 nav ul a {
     padding: 1em;
-    color: tomato;
+    color: rgb(230, 45, 12);
 }
 
 nav ul a:hover {
@@ -47,20 +47,25 @@ nav ul a:hover {
 }
 
 #unforgettable-experiences {
-    background-color: #26B63E;
+    background-color: #4ebdcc;
     background-image: url(myimages/descentAlec3.jpeg);
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4em;
-    color: #fff;
+    font-size: 1.5em;
+    color: #eee;
+    text-shadow: #1916c9;
+    text-emphasis: outline;
 }
 
-#the-climb > div {
+/* #the-climb > div {
     position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
     left: -120px;
-    top: 120px;
+    top: 120px; */
 }
 
 #the-climb > h2, #the-climb p {
@@ -70,11 +75,11 @@ nav ul a:hover {
 
 
 /* Create some cards in this section */
-#robert-moog {
+#the-climb {
     background-color: #26323f;
 }
 
-#robert-moog ul {
+#the-overnight ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -82,13 +87,13 @@ nav ul a:hover {
     justify-content: center;
 }
 
-#robert-moog > h2 {
+#the-overnight > h2 {
     margin: 1em;
-    font-size: 3em;
+    font-size: 4em;
     text-align: center;
     color: #eee;
 }
-#the-climb{
+#the-overnight{
     display: flex;
     justify-content: space-between;
     flex-direction: row;   
@@ -116,23 +121,22 @@ nav ul a:hover {
     margin: 1rem;
 }
 
-#wendy-carlos {
+#the-descent {
     background-color: #5856D6;
-    background-image: url(myimages/climbgood.jpeg);
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#wendy-carlos > div {
+#the-descent > div {
     background-color:rgba(255, 255, 255, 0.65);
     padding: 2em;
     width: 75%;
     max-width: 700px;
 }
 
-#wendy-carlos  h2 {
+#the-descent  h2 {
     font-size: 4em;
     margin: 0 0 1rem 0;
     text-align: center;
