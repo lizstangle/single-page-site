@@ -109,11 +109,12 @@ nav ul a:hover {
     justify-content: left;
     left: -120px;
     top: 120px; */
-}
+
 
 #the-climb > h2, #the-climb p {
     margin: 0;
     text-shadow: 0 0 20px #000000;
+    
 }
 
 
@@ -135,14 +136,14 @@ nav ul a:hover {
     font-size: 4em;
     text-align: center;
     color: #eee;
+    /* background-color: #26323f */
 }
 #the-overnight{
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;   
-
-
-
+    /* justify-content: end; */
+    flex-direction: row;
+    justify-items: end;  
+    justify-content: stretch; 
 
 }
 
@@ -168,7 +169,7 @@ img {
 }
 
 .card h3, .card p {
-    margin: 1rem;
+    margin: 0rem;
 }
 
 h2.anchor {
@@ -183,6 +184,7 @@ h2.anchor {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0rem;
 }
 
 #the-descent > div {
