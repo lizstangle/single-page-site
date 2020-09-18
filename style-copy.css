@@ -6,11 +6,13 @@ body {
     background-color: lightgray;
 }
 
-nav, main > section {
+nav,
+main>section {
     overflow: auto;
 }
 
-main > section, main > footer {
+main>section,
+main>footer {
     min-height: 100vh;
 }
 
@@ -19,12 +21,14 @@ main > section, main > footer {
     justify-content: space-evenly;
 }
 
-#tryptich > section {
+#tryptich>section {
     width: 30%;
 }
 
 section.main-section {
-    display: flex;
+    /* this was causing your entire container to display flex, 
+    making it almost impossiple to center your text*/
+    /* display: flex; */
     justify-content: space-evenly;
     padding-top: 70px;
 }
@@ -35,23 +39,37 @@ section.main-section {
 
 #unforgettable-experiences h2 {
     text-shadow: 0 0 7px #000,
-    0 0 12px #000,
-    0 0 18px #000;
+        0 0 12px #000,
+        0 0 18px #000;
+}
+
+/* helps center the-climb section's text*/
+.header {
+    margin: -50px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.box-shadow {
+    display: flex;
+    transform: translate(50px, 75px);
 }
 
 ul.card-container {
     width: 31.5%;
     list-style: none;
 }
+
 ul.climb-left {
-    transform: translate(109.5px,0);
+    transform: translate(109.5px, 0);
 
 }
+
 ul.climb-right {
-    transform: translate(-40px,0)
+    transform: translate(-100px, 0)
 }
 
-.two-wide ul.card-container {   
+.two-wide ul.card-container {
     width: 48.5%;
 }
 
@@ -62,6 +80,9 @@ ul.climb-right {
 nav#nav {
     position: fixed;
     width: 100%;
+    /*coding is one weird graph! by adding this, we ensure that
+    your navbar stays on top of everything else*/
+    z-index: 1;
 }
 
 /* Style the nav bar */
@@ -74,7 +95,8 @@ nav#nav {
     display: flex;
 }
 
-nav h1, ul {
+nav h1,
+ul {
     margin: 0
 }
 
@@ -119,29 +141,31 @@ nav ul a:hover {
     top: 120px; */
 
 
-#the-climb > h2, #the-climb h2 {
+#the-climb>h2,
+#the-climb h2 {
     /* margin: 0;
     text-shadow: 0 0 20px #000000; */
     text-justify: left;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20;
     line-height: 2em;
-    font-color: lightgray
-
+    /* color: lightgray */
 }
-#theclimb > p {
-    margin: 0;
+
+#theclimb>blockquote,
+#theclimb>footer {
     text-shadow: 0 0 20px #000000;
     text-justify: right;
     font-size: 40;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-alight: right;
+    text-align: right;
 }
 
 
 /* Create some cards in this section */
 #the-climb {
-    background-color:  lightgray;
+    background-color: lightgray;
+    overflow: hidden;
 }
 
 #the-overnight ul {
@@ -153,20 +177,22 @@ nav ul a:hover {
     background-color: lightgray;
 }
 
-#the-overnight > h2 {
+#the-overnight>h2 {
     margin: 10em;
     font-size: 6em;
     text-align: center;
     color: #eee;
-    bbackground-color: lightgray;;
+    background-color: lightgray;
+    ;
 }
-#the-overnight{
+
+#the-overnight {
     display: flex;
     /* justify-content: end; */
     flex-direction: row;
-    justify-items: end;  
+    justify-items: end;
     justify-content: stretch;
-    transform: 10em,0; 
+    transform: 10em, 0;
 
 }
 
@@ -180,7 +206,6 @@ img {
     width: 400px;
     /* margin: 1em; */
     /* background-color: #eee; */
-    box-shadow: 0 0 22px rgba(0, 0, 0, 0.44);
 }
 
 .card img {
@@ -191,7 +216,8 @@ img {
     font-size: 1em;
 }
 
-.card h3, .card p {
+.card h3,
+.card p {
     margin: 0rem;
 }
 
@@ -211,18 +237,19 @@ h2.anchor {
     background-color: lightgray;
 }
 
-#the-descent > div {
+#the-descent>div {
     /* background-color:rgba(255, 255, 255, 0.65); */
     padding: 2em;
     width: 75%;
     max-width: 700px;
 }
 
-#the-descent  h2 {
+#the-descent h2 {
     font-size: 4em;
     margin: 0 0 0 0;
     text-align: center;
 }
+
 #the-descent p {
     text-align: right;
 }
@@ -276,11 +303,11 @@ h2.anchor {
     align-items: center;
 }
 
-#contact > form {
+#contact>form {
     display: flex;
 }
 
-#contact > form > div {
+#contact>form>div {
     display: flex;
     flex-direction: column;
 }
@@ -298,13 +325,14 @@ label span {
     margin: 1em 0;
 }
 
-input, textarea {
+input,
+textarea {
     border: 1px solid #000;
     padding: 0.5em;
     margin: 0 2em 0 0;
     width: 20em;
     font-size: 1em;
-    
+
 }
 
 textarea {
@@ -318,8 +346,8 @@ form button {
     margin: 1em 0;
     align-self: flex-end;
     padding: 0.5em 1em;
-    background-color:rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
     color: #fff;
     border: none;
-    
+
 }
